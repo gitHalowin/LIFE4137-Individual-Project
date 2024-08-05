@@ -17,7 +17,7 @@ awk 'OFS="\t"{print $1,$2,$3,".",".","."}' leaf_As75_peaks.txt>leaf_As75_peaks.b
 bedtools intersect -wb -a leaf_As75_peaks.bed -b TAIR10_GFF3_genes.gff > leaf_As75_annotated_peaks.gff
 ```
 https://jbrowse2.arabidopsis.org/index.html?session=local-xlYTiOwW-6_kJOC6JSWTx
-### 4. Get the gene descriptions fromTAIR 
+### 4. Get the gene descriptions from TAIR 
 https://www.arabidopsis.org/
 ### 5. Visualization of global and anchored GWAS results
 Global_Manhatton.R <br>
