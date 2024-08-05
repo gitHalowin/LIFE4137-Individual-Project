@@ -1,0 +1,5 @@
+# convert to bed files for running bedrolls
+awk 'OFS="\t"{print $1,$2,$3,".",".","."}' leaf_As75_peaks.txt>leaf_As75_peaks.bed
+
+# intersect the peak regions with annotation file
+bedtools intersect -wb -a leaf_As75_peaks.bed -b TAIR10_GFF3_genes.gff > leaf_As75_annotated_peaks.gff
