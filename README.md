@@ -9,7 +9,13 @@ e.g. sbatch GWAS_leaf_Ni60.sh
 + #### Create 500 bp windows around the peaks <br>
 get_region.R
 + #### Intersect the regions with gff annotation file or search on genome browser
-annotate_peaks.txt <br>
+```
+# convert to bed files for running bedrolls
+awk 'OFS="\t"{print $1,$2,$3,".",".","."}' leaf_As75_peaks.txt>leaf_As75_peaks.bed
+
+# intersect the peak regions with annotation file
+bedtools intersect -wb -a leaf_As75_peaks.bed -b TAIR10_GFF3_genes.gff > leaf_As75_annotated_peaks.gff
+```
 https://jbrowse2.arabidopsis.org/index.html?session=local-xlYTiOwW-6_kJOC6JSWTx
 ### 4. Get the gene descriptions fromTAIR 
 https://www.arabidopsis.org/
