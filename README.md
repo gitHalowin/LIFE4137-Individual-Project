@@ -10,7 +10,7 @@ e.g. sbatch GWAS_leaf_Ni60.sh
 get_region.R
 + #### Intersect the regions with gff annotation file on Linux or search on genome browser
 ```
-# convert to bed files for running bedrolls
+# convert to bed files for running bedtools
 awk 'OFS="\t"{print $1,$2,$3,".",".","."}' leaf_As75_peaks.txt>leaf_As75_peaks.bed
 
 # intersect the peak regions with annotation file
