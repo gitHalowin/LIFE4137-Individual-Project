@@ -1,6 +1,10 @@
 # LIFE4137-Individual-Project
 Anchored GWAS Identifies Pathways Linked to Leaf and Seed Ionome in 1,164 Arabidopsis Accessions
 
+## Aim
++ To obtain the SNPs that
++ To identify the candidate genes that fall within the likely region of SNPs 
+
 ## Workflow
 ### 1. Run GWAS pipeline on Ada
 e.g. sbatch GWAS_leaf_Ni60.sh
