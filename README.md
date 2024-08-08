@@ -2,7 +2,7 @@
 Anchored GWAS Identifies Pathways Linked to Leaf and Seed Ionome in 1,164 Arabidopsis Accessions
 
 ## Aim
-+ To obtain the SNPs that
++ To obtain the SNPs that have the most significant correlation with the ionome
 + To identify the candidate genes that fall within the likely region of SNPs 
 
 ## Workflow
